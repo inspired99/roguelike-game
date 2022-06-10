@@ -8,4 +8,6 @@
 
 * Press `R` to stop render animation when level is loading.
 
-* Press `Q` to quit game.
+* Press `F` to quit game.
+
+

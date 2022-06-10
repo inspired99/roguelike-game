@@ -4,6 +4,8 @@
 
 ## Gameplay
 
+When the game starts, random map is created by maze generator.
+
 ## Key Control:
 
 * Press `R` to stop render animation when level is loading.

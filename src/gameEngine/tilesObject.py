@@ -8,4 +8,7 @@ class Tiles(GameObject):
         self.color("blue")
         self.penup()
         self.speed(0)
-        self.label = "O"
+
+    @staticmethod
+    def get_label():
+        return "W"

@@ -10,14 +10,27 @@ class App:
         self.length = self.resolution[0]
         self.width = self.resolution[1]
         self.window = turtle.Screen()
+        self.maze = Maze()
+        self.player = self.maze.get_player()
+        self.set_up_window()
+        self.set_up_player_control()
+
+    def set_up_window(self):
         self.window.bgcolor("black")
         self.window.title("Roguelike Game")
         self.window.setup(self.length, self.width)
         self.window.listen()
         self.window.onkey(self.turn_off_render, "r")
         self.window.onkey(self.turn_off_render, "R")
-        self.window.onkey(self.game_over, "q")
-        self.window.onkey(self.game_over, "Q")
+        self.window.onkey(self.game_over, "F")
+        self.window.onkey(self.game_over, "f")
+
+    def set_up_player_control(self):
+        turtle.listen()
+        turtle.onkey(self.player.go_left, "Left")
+        turtle.onkey(self.player.go_right, "Right")
+        turtle.onkey(self.player.go_up, "Up")
+        turtle.onkey(self.player.go_down, "Down")
 
     def turn_off_render(self):
         self.window.tracer(0)
@@ -27,11 +40,11 @@ class App:
 
     def run(self):
         self.running = True
-        maze = Maze()
-        maze.generate_map()
-        maze.create_maze()
+        self.maze.generate_map()
+        self.maze.create_maze()
 
         while self.running:
+            self.maze.check_treasures_collected()
             self.window.update()
 
         self.window.bye()

@@ -1,4 +1,6 @@
 # Roguelike-game
 
 
-Key Control: 
+## Key Control:
+
+`R`

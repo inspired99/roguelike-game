@@ -1,5 +1,9 @@
 # Roguelike-game Beta version
 
+Was implemented using Python 3 (Turtle & Tkinter libraries).
+
+To run use : 
+
 ## Project Structure
 
 ## Gameplay

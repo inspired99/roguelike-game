@@ -1,12 +1,15 @@
+import turtle
+from pathlib import Path
+
 from src.gameEngine.gameObject import GameObject
 
 
 class Player(GameObject):
     def __init__(self):
         super().__init__()
-        self.shape("square")
+        turtle.register_shape(str(Path(__file__).resolve().parent.parent) + "/resources/hero.gif")
+        self.shape(str(Path(__file__).resolve().parent.parent) + "/resources/hero.gif")
         self.hideturtle()
-        self.color("red")
         self.penup()
         self.speed(3)
 

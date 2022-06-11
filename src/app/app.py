@@ -1,4 +1,5 @@
 import turtle
+from pathlib import Path
 
 from src.map.maze import Maze
 
@@ -16,7 +17,7 @@ class App:
         self.set_up_player_control()
 
     def set_up_window(self):
-        self.window.bgcolor("black")
+        self.window.bgpic(str(Path(__file__).resolve().parent.parent) + "/resources/background.gif")
         self.window.title("Roguelike Game")
         self.window.setup(self.length, self.width)
         self.window.listen()
@@ -44,7 +45,10 @@ class App:
         self.maze.create_maze()
 
         while self.running:
-            self.maze.check_treasures_collected()
+            self.maze.check_enemies_collapsed()
+            if self.maze.check_wizard_reached():
+                self.window.ontimer(self.game_over, 1000)
+
             self.window.update()
 
         self.window.bye()

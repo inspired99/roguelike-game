@@ -16,6 +16,8 @@ class GameObject(turtle.Turtle, ABC):
         self.block_size = 24
         self.label = None
         self.walls_blocks = None
+        self.x = None
+        self.y = None
 
     @staticmethod
     @abstractmethod
@@ -36,6 +38,7 @@ class GameObject(turtle.Turtle, ABC):
         x = self.xcor() - obj.xcor()
         y = self.ycor() - obj.ycor()
         dist = math.sqrt((x ** 2) + (y ** 2))
+
         if dist < 5:
             return True
         return False

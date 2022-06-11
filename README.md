@@ -12,14 +12,6 @@ You are playing a hero who is stuck in jungle full of evil orcs. The only thing 
 
 ## Key Control
 
-* Press `↑` to move up.
-
-* Press `↓` to move down.
-
-* Press `←` to move left.
-
-* Press `→` to move right.
-
 * Press `R` to stop render animation when level is loading.
 
 * Press `F` to quit game. 

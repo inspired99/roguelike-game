@@ -4,7 +4,7 @@ Was implemented with Python 3 (Turtle & Tkinter libraries).
 
 To play game use command `python3 -m src.main`.
 
-When the game starts, random map is created by maze generator. 
+When the game starts, random map is created by maze generator. Once the Wizard is reached, the game stops.
 
 
 ## Gameplay

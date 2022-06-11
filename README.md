@@ -8,8 +8,17 @@ To play game use command `python3 -m src.main`.
 
 When the game starts, random map is created by maze generator. 
 
+You are playing a hero who is stuck in jungle full of evil orcs. The only thing which lets you stay alive is help of the Wizard, so the goal of the game - find him!
+
 ## Key Control
-* Press `&#8593;` to move up.
+
+* Press `↑` to move up.
+
+* Press `↓` to move down.
+
+* Press `←` to move left.
+
+* Press `→` to move right.
 
 * Press `R` to stop render animation when level is loading.
 

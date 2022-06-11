@@ -4,13 +4,12 @@ Was implemented with Python 3 (Turtle & Tkinter libraries).
 
 To play game use command `python3 -m src.main`.
 
-## Project Structure
-
 ## Gameplay
 
-When the game starts, random map is created by maze generator.
+When the game starts, random map is created by maze generator. 
 
 ## Key Control
+* Press `&#8593;` to move up.
 
 * Press `R` to stop render animation when level is loading.
 

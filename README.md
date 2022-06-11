@@ -11,7 +11,8 @@ When the game starts, random map is created by maze generator.
 
 You are playing a hero who is stuck in jungle full of evil orcs. The only thing which lets you stay alive is help of the Wizard, so the goal of the game - to find him!
 
-[<img src="image.png" width="250"/>](https://user-images.githubusercontent.com/64794482/173167151-7e9a12fd-a5b1-490e-9cd8-2f776c672998.png)
+<img src="[https://github.com/favicon.ico](https://user-images.githubusercontent.com/64794482/173167151-7e9a12fd-a5b1-490e-9cd8-2f776c672998.png)" width="480">
+
 
 ## Key Control
 

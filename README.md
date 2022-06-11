@@ -8,7 +8,9 @@ To play game use command `python3 -m src.main`.
 
 When the game starts, random map is created by maze generator. 
 
-You are playing a hero who is stuck in jungle full of evil orcs. The only thing which lets you stay alive is help of the Wizard, so the goal of the game - find him!
+You are playing a hero who is stuck in jungle full of evil orcs. 
+
+The only thing which lets you stay alive is help of the Wizard, so the goal of the game - to find him!
 
 ## Key Control
 

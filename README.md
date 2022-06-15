@@ -1,6 +1,6 @@
 # Roguelike-game Beta version
 
-Was implemented with Python 3 (Turtle & Tkinter libraries).
+Was implemented with Python 3 (Turtle & Tkinter libraries), install them from `requirements.txt`.
 
 To play game use command `python3 -m src.main`.
 
